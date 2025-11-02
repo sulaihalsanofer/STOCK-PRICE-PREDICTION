@@ -13,7 +13,7 @@ from datetime import datetime, timedelta
 
 # Streamlit page setup
 st.set_page_config(page_title="Apple Stock Prediction", layout="wide")
-st.title("🍎 Apple (AAPL) Stock Price Prediction using LSTM")
+st.title(" Apple (AAPL) Stock Price Prediction")
 
 # -------------------- LOAD DATA --------------------
 st.sidebar.header("Data Range")
@@ -86,7 +86,7 @@ ax.legend()
 st.pyplot(fig)
 
 # -------------------- FUTURE PREDICTION --------------------
-st.subheader("🔮 Predicting the Next 5 Business Days")
+st.subheader("Predicting the Next 5 Business Days")
 
 last_60_days = scaled_data[-60:]
 future_predictions = []
@@ -129,3 +129,4 @@ st.pyplot(fig2)
 st.success("✅ Forecast complete!")
 
 # ----
+
